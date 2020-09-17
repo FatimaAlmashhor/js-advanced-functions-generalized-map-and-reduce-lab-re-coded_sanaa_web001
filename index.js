@@ -30,5 +30,5 @@ function reduce ( arr ,init, callbacks ){
 //   return arr.reduce(callbacks ,100) ;
 // }
 
-function callbacks (e  , memo) {return e + memo} ;
+// function callbacks (e  , memo) {return e + memo} ;
 // arr = reduce([1,2,3], callbacks);
