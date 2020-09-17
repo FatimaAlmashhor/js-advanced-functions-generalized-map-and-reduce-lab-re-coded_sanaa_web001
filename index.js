@@ -20,8 +20,8 @@ sourceArray = [1,2,3,]
 arr = reduce (sourceArray,100, callbacks);
 
 
-function reduce ( arr ,init, callbackFun ){
-  if(init === undefined)
+function reduce ( arr ,init = 0, callbackFun ){
+  if(init = 0)
     return arr.reduce(callbackFun) ;
   else
     return  init + arr.reduce(callbackFun) ;
