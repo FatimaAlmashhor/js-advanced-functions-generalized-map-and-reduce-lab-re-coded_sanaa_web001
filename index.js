@@ -20,10 +20,10 @@ arr = map(dune , callbacks)
 
 
 function reduce ( arr , callbackFun , init  ){
-  if(init = 0)
-    return  arr.reduce(callbackFun ) ;
+  if(init > 0)
+    return  arr.reduce(callbackFun  ,init) ;
   else {
-        return  arr.reduce(callbackFun , init) ;
+        return  arr.reduce(callbackFun ) ;
   }
 }
 // function d ( arr , callbacks ){
