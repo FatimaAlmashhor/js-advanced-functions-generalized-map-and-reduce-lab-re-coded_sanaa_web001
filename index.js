@@ -2,10 +2,10 @@
 // function map (arr) {
 //   return arr.map(x) ;
 // }
-// 
+//
 // let  arr = map([1, 2, 3, -9]);
 // function x (a){ return -1 * a }
-// 
+//
 
 function map(dune , callbacks) {
   return dune.map(callbacks) ;
