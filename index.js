@@ -19,7 +19,7 @@ arr = map(dune , callbacks)
 
 
 
-function reduce ( arr , callbackFun , nit = 0 ){
+function reduce ( arr , callbackFun , init = 0 ){
     return  arr.reduce(callbackFun , init) ;
 }
 // function d ( arr , callbacks ){
