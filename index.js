@@ -16,10 +16,13 @@ function callbacks (a){ return a};
 dune = ["paul", "gurney", "vladimir", "jessica", "chani"]
 arr = map(dune , callbacks)
 
-sourceArray = [1,2,3,100]
+sourceArray = [1,2,3,]
 arr = reduce (sourceArray, callbacks);
-function reduce ( arr , callbacks ){
-  return arr.reduce(callbacks) ;
+function reduce ( arr ,init, callbacks ){
+  if(init === undefined)
+    return arr.reduce(callbacks) ;
+  else 
+    return arr.reduce(callbacks,init) ;
 }
 // function d ( arr , callbacks ){
 //   return arr.reduce(callbacks ,100) ;
@@ -27,3 +30,5 @@ function reduce ( arr , callbacks ){
 
 function callbacks (e  , memo) {return e + memo} ;
 // arr = reduce([1,2,3], callbacks);
+
+
