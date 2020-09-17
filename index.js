@@ -29,3 +29,4 @@ function reduce ( arr ,init = 0, callbackFun ){
 
 function callbackFun (e  , memo) {return e + memo} ;
 // arr = reduce([1,2,3], callbacks);
+
