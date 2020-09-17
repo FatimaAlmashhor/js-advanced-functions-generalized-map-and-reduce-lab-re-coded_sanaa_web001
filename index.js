@@ -21,7 +21,7 @@ arr = reduce (sourceArray, callbacks);
 function reduce ( arr ,init, callbacks ){
   if(init === undefined)
     return arr.reduce(callbacks) ;
-  else 
+  else
     return arr.reduce(callbacks,init) ;
 }
 // function d ( arr , callbacks ){
@@ -30,5 +30,3 @@ function reduce ( arr ,init, callbacks ){
 
 function callbacks (e  , memo) {return e + memo} ;
 // arr = reduce([1,2,3], callbacks);
-
-
