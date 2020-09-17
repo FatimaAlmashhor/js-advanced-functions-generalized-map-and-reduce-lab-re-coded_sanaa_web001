@@ -20,15 +20,15 @@ sourceArray = [1,2,3,]
 arr = reduce (sourceArray,100, callbacks);
 
 
-function reduce ( arr ,init, callbacks ){
+function reduce ( arr ,init, callbackFun ){
   if(init === undefined)
-    return arr.reduce(callbacks) ;
+    return arr.reduce(callbackFun) ;
   else
-    return  init + arr.reduce(callbacks) ;
+    return  init + arr.reduce(callbackFun) ;
 }
 // function d ( arr , callbacks ){
 //   return arr.reduce(callbacks ,100) ;
 // }
 
-// function callbacks (e  , memo) {return e + memo} ;
+function callbackFun (e  , memo) {return e + memo} ;
 // arr = reduce([1,2,3], callbacks);
