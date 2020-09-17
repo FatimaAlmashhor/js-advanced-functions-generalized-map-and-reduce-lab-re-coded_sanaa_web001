@@ -22,7 +22,7 @@ function reduce ( arr ,init, callbacks ){
   if(init === undefined)
     return arr.reduce(callbacks) ;
   else
-    return arr.reduce(callbacks,init) ;
+    return  init + arr.reduce(callbacks) ;
 }
 // function d ( arr , callbacks ){
 //   return arr.reduce(callbacks ,100) ;
