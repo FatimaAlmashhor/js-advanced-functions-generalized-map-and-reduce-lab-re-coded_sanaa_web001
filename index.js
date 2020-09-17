@@ -21,7 +21,7 @@ arr = reduce (sourceArray,100, callbacks);
 
 
 function reduce ( arr ,init = 0, callbackFun ){
-    return = arr.reduce(callbackFun , init) ;
+    return  arr.reduce(callbackFun , init) ;
 }
 // function d ( arr , callbacks ){
 //   return arr.reduce(callbacks ,100) ;
