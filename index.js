@@ -17,7 +17,7 @@ dune = ["paul", "gurney", "vladimir", "jessica", "chani"]
 arr = map(dune , callbacks)
 
 sourceArray = [1,2,3,]
-arr = reduce (sourceArray, callbacks);
+arr = reduce (sourceArray,100, callbacks);
 function reduce ( arr ,init, callbacks ){
   if(init === undefined)
     return arr.reduce(callbacks) ;
