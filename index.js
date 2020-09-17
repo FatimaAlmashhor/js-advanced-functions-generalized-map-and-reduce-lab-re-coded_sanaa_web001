@@ -1,11 +1,11 @@
 // Add your functions here
-function map (arr) {
-  return arr.map(x) ;
-}
-
-let  arr = map([1, 2, 3, -9]);
-function x (a){ return -1 * a }
-
+// function map (arr) {
+//   return arr.map(x) ;
+// }
+// 
+// let  arr = map([1, 2, 3, -9]);
+// function x (a){ return -1 * a }
+// 
 
 function map(dune , callbacks) {
   return dune.map(callbacks) ;
@@ -18,6 +18,8 @@ arr = map(dune , callbacks)
 
 sourceArray = [1,2,3,]
 arr = reduce (sourceArray,100, callbacks);
+
+
 function reduce ( arr ,init, callbacks ){
   if(init === undefined)
     return arr.reduce(callbacks) ;
